@@ -9,6 +9,8 @@ public class PlayerRed : MonoBehaviour
 
     public float mSpeed;
 
+    public bool m_FacingRight = true;
+
     Vector3 mvelocity;
 
 
@@ -54,4 +56,13 @@ public class PlayerRed : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+
+    //turn character around
+    private void Flip()
+    {
+        m_FacingRight = !m_FacingRight;
+
+        transform.Rotate(0f, 180f, 0f);
+    }
 }
+
