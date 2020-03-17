@@ -120,6 +120,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &295360543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4952876731550666735, guid: bb26ade841a98674f973957ccce873d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4952876731309152240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &295360544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295360543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &487917612
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +170,7 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 0
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
@@ -234,14 +253,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3973730850f31644a9c85af4239bec8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GroundCheck: {fileID: 4952876731550666707, guid: bb26ade841a98674f973957ccce873d3,
-    type: 3}
   firePoint: {fileID: 1853310262}
   bulletPrefab: {fileID: 1884905967066721626, guid: cd6f339875a6cbb4eaaa89f62caa40a0,
     type: 3}
-  mSpeed: 10
+  mSpeed: 20
   m_FacingRight: 1
-  m_MovementSmoothing: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,5 +547,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4952876731550666704, guid: bb26ade841a98674f973957ccce873d3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bb26ade841a98674f973957ccce873d3, type: 3}
